@@ -13,7 +13,7 @@ export async function main(event, context) {
     await stripe.charges.create({
       source,
       amount,
-      decription,
+      description,
       currency: 'usd'
     });
     return success({ status: true });
